@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>Thynkas Lens</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Fotózás">
+  <meta name="keywords" content="fotó">
+  <meta name="author" content="Pontom Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+</head>
+
+<body>
+
+  <div id="content">
+
+
+    <!-- *** HEADER *** -->
+    
+    <header>
+      <!-- *** NAVIGATION *** --> 
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+          <div class="menuicon"> </div>
+          <div class="menuicon"> </div>
+          <div class="menuicon"> </div>
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="first-link" href="#">Bio</a>
+          <a href="#">Fotók</a>
+          <a href="#">Kapcsolat</a>
+        </div>
+      </div>
+
+
+    <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+
+
+<!-- The social media icon bar -->
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+</div>
+
+
+
+
+    </header>
+
+    <!-- *** LOGÓ *** --> 
+    <div class="logo"> Thinkas Lens</div>
+
+
+          
+      
+    <!-- *** MAIN *** -->
+    <main>  
+      <img class= "picture" src="https://cdn.pixabay.com/photo/2016/11/21/16/08/tying-hair-1846171_1280.jpg" alt="wedding photo">
+      <img class= "picture" src="https://cdn.pixabay.com/photo/2015/05/15/14/37/bride-and-groom-768594_1280.jpg" alt="wedding photo">
+      <img class= "picture" src="https://images.pexels.com/photos/1805597/pexels-photo-1805597.jpeg" alt="wedding photo">
+      <img class= "picture" src="https://images.pexels.com/photos/2814808/pexels-photo-2814808.jpeg" alt="wedding photo">
+      <img class= "picture" src="https://images.pexels.com/photos/1727415/pexels-photo-1727415.jpeg" alt="wedding photo">
+      <img class= "picture" src="https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg" alt="wedding photo">
+
+    </main>
+
+
+
+    <!-- *** FOOTER *** -->
+    <footer>
+      <p class="footer__copyright">© 2023 Copyright Thynkas Lens <br>
+        <span class="footer__text">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Hungary</span>
+      </p>
+    </footer>      
+
+
+
+
+
+  </div> <!-- END: class="grid-container" -->
+</body>
+
+</html>
