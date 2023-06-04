@@ -14,17 +14,13 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/about.css">
   
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-
 
 </head>
 
@@ -39,69 +35,52 @@
       <!-- *** NAVIGATION *** --> 
       <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">
-          <div class="menuicon"> </div>
-          <div class="menuicon"> </div>
-          <div class="menuicon"> </div>
+          <i class="fa-solid fa-bars"></i>
         </button>
         <div id="myDropdown" class="dropdown-content">
           <a class="first-link" href="#">Bio</a>
           <a href="#">Fotók</a>
+          <a href="#">Esküvő</a>
           <a href="#">Kapcsolat</a>
         </div>
       </div>
 
 
-    <script>
-      /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-    </script>
-
-
-<!-- The social media icon bar -->
-<div class="icon-bar">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-</div>
-
-
-
+        <!-- The social media icon bar -->
+        <div class="icon-bar">
+          <a href=#> <i class="fa-brands fa-facebook-f"></i></a>
+          <a href=#> <i class="fa-brands fa-instagram"></i></a>
+        </div>
 
     </header>
 
+
+
     <!-- *** LOGÓ *** --> 
-    <div class="logo"> Thinkas Lens</div>
+    <div class="logo"> Thynkas Lens</div>
 
 
           
       
     <!-- *** MAIN *** -->
-    <main>  
-      <img class= "picture" src="https://cdn.pixabay.com/photo/2016/11/21/16/08/tying-hair-1846171_1280.jpg" alt="wedding photo">
-      <img class= "picture" src="https://cdn.pixabay.com/photo/2015/05/15/14/37/bride-and-groom-768594_1280.jpg" alt="wedding photo">
-      <img class= "picture" src="https://images.pexels.com/photos/1805597/pexels-photo-1805597.jpeg" alt="wedding photo">
-      <img class= "picture" src="https://images.pexels.com/photos/2814808/pexels-photo-2814808.jpeg" alt="wedding photo">
-      <img class= "picture" src="https://images.pexels.com/photos/1727415/pexels-photo-1727415.jpeg" alt="wedding photo">
-      <img class= "picture" src="https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg" alt="wedding photo">
-
+    <main>
+      <div class="row">
+        <div class="column">  
+          <img class= "picture" src="https://cdn.pixabay.com/photo/2016/11/21/16/08/tying-hair-1846171_1280.jpg" alt="wedding photo">
+          <img class= "picture" src="https://images.pexels.com/photos/2814808/pexels-photo-2814808.jpeg" alt="wedding photo">
+          <img class= "picture" src="https://images.pexels.com/photos/1805597/pexels-photo-1805597.jpeg" alt="wedding photo">
+          <img class= "picture" src="https://images.pexels.com/photos/1727415/pexels-photo-1727415.jpeg" alt="wedding photo">
+          <img class= "picture" src="https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg" alt="wedding photo">
+        </div>
+        <div class="column">  
+          <img class= "picture" src="https://images.pexels.com/photos/13293704/pexels-photo-13293704.jpeg" alt="wedding photo">
+          <img class= "picture" src="https://images.pexels.com/photos/3916017/pexels-photo-3916017.jpeg" alt="wedding photo">
+          <img class= "picture" src="https://images.pexels.com/photos/1676124/pexels-photo-1676124.jpeg" alt="wedding photo">
+          <img class= "picture" src="https://images.pexels.com/photos/4545092/pexels-photo-4545092.jpeg" alt="wedding photo">
+          <img class= "picture" src="https://images.pexels.com/photos/3091636/pexels-photo-3091636.jpeg" alt="wedding photo">
+        </div>
+      </div>
     </main>
-
 
 
     <!-- *** FOOTER *** -->
@@ -109,9 +88,59 @@
       <p class="footer__copyright">© 2023 Copyright Thynkas Lens <br>
         <span class="footer__text">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Hungary</span>
       </p>
+
+      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-circle-chevron-up"></i>     
+      </button>
+
+
+        <script>
+          // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        </script>
+
+
     </footer>      
 
-
+      <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
 
 
 
