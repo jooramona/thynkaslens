@@ -106,7 +106,9 @@
 .picture {
   width: 100%;
   padding: 8px 30px;
+  pointer-events: none;
 }
+
 
 
 /*------------------------------------*\
