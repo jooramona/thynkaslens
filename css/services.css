@@ -1,0 +1,167 @@
+:root {
+  --primary-font-family: 'Playfair Display', serif;
+  --secondary-font-family: 'eyesome_scriptregular';
+  --font-color: #242424;
+  --primary-color: #f8f8f8;
+} 
+
+
+
+
+/***** MOBIL *****/
+
+h1 {
+  font-family: var(--secondary-font-family);
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 40px 20px 0 20px;
+  position: relative;
+  z-index: 2;
+  top: 60px;
+}
+
+hr {
+  width: 50%;
+  height: 1.5px;
+  background-color: white;
+  border-style: none;
+}
+
+.servicesblock p {
+  font-family: var(--primary-font-family);
+  color: var(--font-color);
+}
+
+.text {
+  margin: 20px 20px 5px 20px;
+}
+
+.serviceslink {
+  display: none;
+}
+
+ul {
+  padding-inline-start: 28px;
+}
+
+
+
+li {
+  font-family: var(--primary-font-family);
+  color: var(--font-color);
+  margin: 10px;
+  list-style-position: outside;
+}
+
+.prolog {
+  font-family: var(--primary-font-family);
+  text-align: center;
+  background-color: var(--primary-color);
+  padding: 40px 25px;
+  color: var(--font-color);
+}
+
+
+
+
+.box {
+  width: 100vw;
+  position: relative;
+  left: -90px;
+  transition: all 2s ease-in-out;
+}
+
+.animate {
+  left: 0px
+}
+
+
+/***** DESKTOP *****/
+
+@media screen and (min-width: 1200px) {
+
+
+  .prolog {
+    font-size: 20px;
+    width: 78vw;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  h1 {
+    font-size: 40px;
+    top: 85px;
+    color: var(--font-color);
+  }
+
+
+  .box {
+    position: absolute;
+    left: 0;
+    margin: 0 31px;
+    width: 40vw;
+  }
+
+
+
+  /* BUTTON SECTION */
+
+    .buttonblock {
+      display: flex;
+      justify-content: center;
+    }
+
+
+
+      /* Style the tab buttons */
+    .serviceslink {
+      display: block;
+      font-family: var(--primary-font-family);
+      text-transform: uppercase;
+      background-color: #3d3d3d;
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 14px;
+      width: 12%;
+    }
+
+    /* Change background color of buttons on hover */
+    .serviceslink:hover {
+      background-color: #adadad;
+    }
+
+    /* Set default styles for tab content */
+    .servicesblock {
+      font-size: 18px;
+      display: none;
+      float: right;
+      width: 56vw;
+      min-height: 450px;
+    }
+
+    .text {
+      margin-top: 85px;
+    }
+
+
+    /* Style each tab content individually */
+    #couple {background-color: transparent;}
+    #engaged {background-color: transparent;}
+    #pregnant {background-color: transparent;}
+    #boudoir {background-color: transparent;}
+    #glamour {background-color: transparent;}
+    #creative {background-color: transparent;}
+    #portrait {background-color: transparent;}
+
+  /* END BUTTON SECTION */
+
+
+
+
+}

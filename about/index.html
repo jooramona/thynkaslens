@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>Rólam</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Fotózás">
+  <meta name="keywords" content="fotó">
+  <meta name="author" content="Pontom Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../font/stylesheet.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+  
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+</head>
+
+<body>
+
+  <div id="content">
+
+
+    <!-- *** HEADER *** -->
+    
+    <header>
+
+
+        <!-- *** NAVIGATION FOR MOBILE *** --> 
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../index.html">Kezdőlap</a>
+            <a href="index.html">Rólam</a>
+            <a href="../services/index.html">Szolgáltatások</a>
+            <a href="../contact/index.html">Kapcsolat</a>
+          </div>
+        </div>
+  
+  
+  
+  
+          <!-- *** NAVIGATION FOR DESKTOP*** --> 
+  
+        
+          <div class="nav-content">
+            <a href="../index.html">Kezdőlap</a>
+            <a href="index.html">Rólam</a>
+            <a href="../services/index.html">Szolgáltatások</a>
+            <a href="../contact/index.html">Kapcsolat</a>
+          </div>
+        
+  
+  
+  
+  
+  
+          <!-- The social media icon bar -->
+          <div class="icon-bar">
+            <a href=https://www.facebook.com/profile.php?id=100094342272586 target="_blank"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href=https://www.instagram.com/thynkas_lens/ target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+          </div>
+  
+      </header>
+  
+  
+  
+      <!-- *** LOGÓ *** --> 
+      <a class="logo" href="../index.html"> Thynka's Lens</a>
+
+    <!-- *** MAIN *** --> 
+
+    <main>
+
+      <img id= "me" src="https://images.pexels.com/photos/5081388/pexels-photo-5081388.jpeg" alt="me">
+ 
+      <div class="right-text">
+        <p class="main-title">Köszöntelek!</p>
+        <p class="text">Engedd meg, hogy bemutatkozzam Neked, ismerj meg engem, egy sajátos stílusú fotóst, aki veled együtt éli át a pillanatot. Nem csupán megfigyelője vagyok az eseményeknek, hanem részese és megélője annak, amit megörökítek.</p>
+        <p class="text">Jussak eszedbe én, ha arra gondolsz "mom with cam". Mint feleség és anya, mélyen megértettem, milyen érzelmek kötődnek egy lánykéréshez, az esküvői várakozásához, a gyermekáldás egyedülálló  csodájához és a családi élményekhez. Ezen felül, azt is tudom, milyen fontos, hogy nőként kiálljunk és bemutassuk az egyéniességünket a világnak.</p>
+        <p class="text">Legyen szó egy romantikus szerelmi történetről, boldog családi pillanatokról vagy önmagad örömteli megmutatásáról, a fotóim által kifejezem a valódi és egyedülálló lényedet. Ha azt szeretnéd, hogy a képek többek legyenek egyszerű dokumentációknál, akkor én vagyok az ideális választás.</p>
+        <p class="text">Hagyd, hogy együtt éljük át és örökítsük meg azokat a pillanatokat, amelyek örökre emlékezetesek maradnak.</p>
+        <p class="signo">Jurik-Köpcsényi Kinga</p>
+      </div>
+      
+    </main>
+
+    <footer>
+      <p class="footer__copyright">© 2023 Copyright Thynkas Lens <br>
+        <span class="footer__text">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Hungary</span>
+      </p>
+    </footer>
+
+
+
+    <script>
+
+
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+
+
+    
+        // Elem kiválasztása
+        const targetElement = document.querySelector('#me');
+        
+        // Intersection Observer beállítása
+        const options = {
+          root: null, // A viewport a root elem
+          rootMargin: '0px',
+          threshold: 0.2, // Az elem 20%-a látszik a viewportban
+        };
+        
+        const callback = (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // Elem megjelent a képernyőn, indítsd el az animációt
+              targetElement.classList.add('animate'); // Itt animate-class az a CSS osztály, ami az animációt leírja
+              observer.unobserve(entry.target); // Ne figyelje tovább az elemet, mert már megjelent
+            }
+          });
+        };
+        
+        const observer = new IntersectionObserver(callback, options);
+        
+        // Elem hozzáadása az Observerhez
+        observer.observe(targetElement);
+        
+
+    </script>
+
+</body>
+</html>

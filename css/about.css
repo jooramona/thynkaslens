@@ -1,0 +1,120 @@
+:root {
+  --primary-font-family: 'Playfair Display', serif;
+  --secondary-font-family: 'eyesome_scriptregular';
+  --font-color: #242424;
+  --primary-color: #f8f8f8;
+} 
+
+
+/***** MOBIL *****/
+
+
+
+.main-title {
+  font-family: var(--secondary-font-family);
+  font-size: 50px;
+  margin: 34px;
+}
+
+.text {
+  font-family: var(--primary-font-family);
+  font-size: 17px;
+  line-height: 24px;
+  margin: 15px 34px;
+}
+
+.signo {
+  font-family: var(--secondary-font-family);
+  font-size: 30px;
+  text-align: right;
+  margin: 8vw;
+}
+
+#me {
+  width: 80vw;
+  position: relative;
+  left: -110px;
+  margin-top: 20px;
+}
+
+
+.animate {
+  animation: animate 2s ease 0s 1 normal forwards;
+}
+
+@keyframes animate {
+  from {left: -110px;}
+  to   {left: 34px;}
+}
+
+
+
+
+
+/***** DESKTOP *****/
+
+
+@media screen and (min-width: 1200px){
+
+  #content{
+    max-width: 1920px;
+    display: grid;
+    grid-template-areas: 
+      "logo header"
+      "main main"
+      "footer footer";
+  }
+
+  header      {grid-area: header;}
+  main        {grid-area: main;}
+  footer      {grid-area: footer;}
+
+
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .right-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+  }
+  
+  .main-title {
+    font-size: 70px;
+    margin: 108px 0 0 15px;
+  }
+  
+  .text {
+    width: 50vw;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 10px 25px;
+  }
+  
+  .signo {
+    font-size: 38px;
+    text-align: right;
+    margin: 30px;
+  }
+  
+  #me {
+    width: 40vw;
+    object-fit: cover;
+    margin: 78px 10px 0 20px;
+  }
+
+  .animate {
+    animation: animate 2s ease-in 0s 1 normal forwards;
+  }
+  
+  
+  @keyframes animate {
+    from {left: -210px;}
+    to   {left: 20px;}
+  }
+
+}

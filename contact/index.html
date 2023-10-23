@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>Thynka's Lens</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Fotózás">
+  <meta name="keywords" content="fotó">
+  <meta name="author" content="Pontom Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../font/stylesheet.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+
+<body>
+
+  <div id="content">
+
+
+    <!-- *** HEADER *** -->
+    
+    <header>
+
+
+
+        <!-- *** NAVIGATION FOR MOBILE *** --> 
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../index.html">Kezdőlap</a>
+            <a href="../about/index.html">Rólam</a>
+            <a href="../services/index.html">Szolgáltatások</a>
+            <a href="contact/index.html">Kapcsolat</a>
+          </div>
+        </div>
+  
+  
+  
+  
+          <!-- *** NAVIGATION FOR DESKTOP*** --> 
+  
+        
+          <div class="nav-content">
+            <a href="../index.html">Kezdőlap</a>
+            <a href="../about/index.html">Rólam</a>
+            <a href="../services/index.html">Szolgáltatások</a>
+            <a href="contact/index.html">Kapcsolat</a>
+          </div>
+        
+  
+  
+  
+  
+  
+          <!-- The social media icon bar -->
+          <div class="icon-bar">
+            <a href=https://www.facebook.com/profile.php?id=100094342272586 target="_blank"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href=https://www.instagram.com/thynkas_lens/ target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+          </div>
+  
+      </header>
+  
+  
+  
+      <!-- *** LOGÓ *** --> 
+      <a class="logo" href="../index.html"> Thynka's Lens</a>
+
+
+          
+      
+    <!-- *** MAIN *** -->
+    
+    <main>
+    
+
+      
+      <div class="container">
+          <div class="title">
+          <h1>Vedd fel velem a kapcsolatot!</h1>
+          <p>Bármilyen kérdés/kérés esetén keress bizalommal!</p>
+        </div>
+
+        <form class="form-panel" action="action_page.php">
+          <h1>Írj egy üzenetet és a lehető leghamarabb válaszolok!</h1>
+          <input type="text" id="fname" name="firstname" placeholder="Neved">
+          <input type="text" id="lname" name="lastname" placeholder="E-mail címed">
+          <textarea id="subject" name="subject" placeholder="Üzenet" style="height:200px"></textarea>
+
+          
+          <label for="adatkezeles"><input type="checkbox" id="adatkezeles" name="adatkezeles" value="1">Elolvastam és elfogadom az <a href="#" target="_blank">Adatkezelési tájékoztatóban</a> foglaltakat!</label>
+             
+          <input type="submit" value="Küldés">
+        </form>
+
+
+        <div class="contact">
+          <h1>Vagy keress az alábbi elérhetőségek valamelyikén!</h1>
+          <p>E-mail: hello@thynkas.hu</p>
+          <p>Telefonszám: +36 20 555 5555</p>
+          <span>Hívj bátran hétfőtől péntekig 08:00 és 16:00 óra között!</span>
+        </div>
+
+
+
+
+
+      </div>
+    </main>
+
+ <!-- *** FOOTER *** -->
+  <footer>
+    <p class="footer__copyright">© 2023 Copyright Thynkas Lens <br>
+      <span class="footer__text">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Hungary</span>
+    </p>
+  </footer>
+
+  <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+
+
+</body>
+</html>
