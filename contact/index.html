@@ -93,25 +93,16 @@
     <!-- *** MAIN *** -->
     
     <main>
-    
-
-      
+          
       <div class="container">
-          <div class="title">
+        <div class="title">
           <h1>Vedd fel velem a kapcsolatot!</h1>
           <p>Bármilyen kérdés/kérés esetén keress bizalommal!</p>
         </div>
 
-        <form class="form-panel" action="action_page.php">
-          <h1>Írj egy üzenetet és a lehető leghamarabb válaszolok!</h1>
-          <input type="text" id="fname" name="firstname" placeholder="Neved">
-          <input type="text" id="lname" name="lastname" placeholder="E-mail címed">
-          <textarea id="subject" name="subject" placeholder="Üzenet" style="height:200px"></textarea>
-
-          
-          <label for="adatkezeles"><input type="checkbox" id="adatkezeles" name="adatkezeles" value="1">Elolvastam és elfogadom az <a href="#" target="_blank">Adatkezelési tájékoztatóban</a> foglaltakat!</label>
-             
-          <input type="submit" value="Küldés">
+        <form class="form-panel">
+          <iframe class="google-form-panel" src="https://docs.google.com/forms/d/e/1FAIpQLSckLBiuwk5A9gMzxifZpCTH4TmohRyss699gjOwsz1hpueiHA/viewform?embedded=true">Betöltés…</iframe>
+          <label for="adatkezeles"><input type="checkbox" id="adatkezeles" name="adatkezeles" value="1">Elolvastam és elfogadom az <a href="..//data/index.html" target="_blank">Adatvédelmi tájékoztatóban</a> foglaltakat!</label>
         </form>
 
 
@@ -122,16 +113,26 @@
           <span>Hívj bátran hétfőtől péntekig 08:00 és 16:00 óra között!</span>
         </div>
 
-
-
-
-
       </div>
+
     </main>
+
+
+<!-- *** LASTLINE *** -->
+     <div id="last_line">
+      <a href="../imprint/index.html"><p class="main_documents">Impresszum</p></a>
+      <p class="sign">|</p>
+      <a href="../aszf/index.html"><p class="main_documents">Általános szerződési feltételek (ÁSZF)</p></a>
+      <p class="sign">|</p>
+      <a href="../data/index.html"><p class="main_documents">Adatvédelmi tájékoztató</p></a>
+      <p class="sign">|</p>
+      <a href="../ff/index.html"><p class="main_documents">Felhasználási feltételek</p></a>
+    </div>
+
 
  <!-- *** FOOTER *** -->
   <footer>
-    <p class="footer__copyright">© 2023 Copyright Thynkas Lens <br>
+    <p class="footer__copyright">© 2023 Copyright Thynka's Lens <br>
       <span class="footer__text">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Hungary</span>
     </p>
   </footer>

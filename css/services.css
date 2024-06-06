@@ -2,7 +2,7 @@
   --primary-font-family: 'Playfair Display', serif;
   --secondary-font-family: 'eyesome_scriptregular';
   --font-color: #242424;
-  --primary-color: #e7e7e7;
+  --primary-color: #242424;
 } 
 
 
@@ -59,7 +59,7 @@ li {
   text-align: center;
   background-color: var(--primary-color);
   padding: 40px 25px;
-  color: var(--font-color);
+  color: white;
 }
 
 
@@ -121,7 +121,7 @@ li {
       display: block;
       font-family: var(--primary-font-family);
       text-transform: uppercase;
-      background-color: #3d3d3d;
+      background-color: var(--primary-color);
       color: white;
       border: none;
       outline: none;

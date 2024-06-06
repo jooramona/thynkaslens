@@ -1,0 +1,23 @@
+:root {
+  --primary-font-family: 'Playfair Display', serif;
+  --secondary-font-family: 'eyesome_scriptregular';
+  --font-color: #242424;
+  --primary-color: #242424;
+} 
+
+
+/***** MOBIL *****/
+
+#documents * {
+  margin: 0 20px 10px 20px;
+  font-weight: 400;
+  font-family: var(--primary-font-family);
+}
+
+#documents h1, #documents h2 {
+  margin-top: 50px;
+}
+
+#documents h3, #documents p {
+  font-size: 16px;
+}

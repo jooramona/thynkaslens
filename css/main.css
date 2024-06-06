@@ -2,7 +2,7 @@
   --primary-font-family: 'Playfair Display', serif;
   --secondary-font-family: 'eyesome_scriptregular';
   --font-color: #242424;
-  --primary-color: #e7e7e7;
+  --primary-color: #242424;
 }  
 
 
@@ -18,7 +18,7 @@
 
  /* Dropdown Button */
 .dropbtn {
-  background-color: var(--primary-color);
+  background-color: whitesmoke;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 6px;
@@ -38,7 +38,7 @@
   display: none;
   position: absolute;
   top: 70px;
-  background-color: black;
+  background-color: var(--primary-color);
   opacity: 90%;
   z-index: 1;
   padding: 40px 0;
@@ -46,7 +46,7 @@
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  font-family: var(--primary-font-family);
+  font-family: var(--primary-font-family) ;
   color: white;
   font-size: 18px;
   padding: 10px 16px;
@@ -87,14 +87,14 @@
 .icon-bar a {
   text-align: center;
   padding: 10px;
-  color: rgb(82, 82, 82);
+  color: white;
   font-size: 20px;
   border-radius: 0 0 12% 12%;
 }
 
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-  color: white;
+  color: whitesmoke;
 }
 
 
@@ -121,6 +121,11 @@
   user-select: none;
 }
 
+#last_line {
+  margin-top: 80px;
+  text-align: center;
+}
+
 
 
 /*------------------------------------*\
@@ -129,6 +134,9 @@
 
 footer {
   height:          200px;
+}
+
+footer p {
   text-align:      center;
   font-size:       10px;
   letter-spacing:  .15rem;
@@ -198,7 +206,10 @@ footer {
         margin-bottom: 10px;
       }
       
-      .nav-content a:hover {background-color: var(--primary-color);}   /* Change color of dropdown links on hover*/
+      .nav-content a:hover {
+        background-color: var(--primary-color);
+        color: white;      
+      }   /* Change color of dropdown links on hover*/
      
 
      .first-link {
@@ -241,6 +252,23 @@ footer {
       padding: 5px;
     }
 
+    #last_line {
+      margin-top: 60px;
+      margin-bottom: 0;
+    }
+
+    #last_line p {
+      font-size: 16px;
+      color: var(--font-color);
+      padding: 12px 8px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    #last_line p:hover {
+      color: #6e6e6e;      
+    }   /* Change color of dropdown links on hover*/
+
 
 
   /*------------------------------------*\
@@ -250,8 +278,7 @@ footer {
     footer {
       height:          150px;
       font-size:       11px;
-      letter-spacing:  .2rem;
-      margin-top:      100px;
+      letter-spacing:  .2rem; 
     }
 
 

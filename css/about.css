@@ -2,7 +2,7 @@
   --primary-font-family: 'Playfair Display', serif;
   --secondary-font-family: 'eyesome_scriptregular';
   --font-color: #242424;
-  --primary-color: #e7e7e7;
+  --primary-color: #242424;
 } 
 
 
@@ -55,21 +55,6 @@
 
 
 @media screen and (min-width: 1200px){
-
-  #content{
-    max-width: 1920px;
-    display: grid;
-    grid-template-areas: 
-      "logo header"
-      "main main"
-      "footer footer";
-  }
-
-  header      {grid-area: header;}
-  main        {grid-area: main;}
-  footer      {grid-area: footer;}
-
-
 
   main {
     display: flex;
