@@ -12,13 +12,12 @@
 
 h1 {
   font-family: var(--secondary-font-family);
-  color: white;
   font-size: 28px;
   font-weight: 400;
   margin: 40px 20px 0 20px;
+  margin-bottom: 0;
   position: relative;
   z-index: 2;
-  top: 60px;
 }
 
 hr {
@@ -56,10 +55,15 @@ li {
 
 .prolog {
   font-family: var(--primary-font-family);
+  background-image: url("https://images.pexels.com/photos/5091767/pexels-photo-5091767.jpeg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  text-transform: uppercase;
   text-align: center;
   background-color: var(--primary-color);
   padding: 40px 25px;
   color: white;
+  line-height: 24px;
 }
 
 
@@ -83,11 +87,14 @@ li {
 
 
   .prolog {
+    background-image: url("https://images.pexels.com/photos/5091767/pexels-photo-5091767.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-size: 20px;
-    width: 78vw;
     margin: 30px;
     margin-left: auto;
     margin-right: auto;
+    padding: 40px 100px;
   }
 
   
@@ -128,7 +135,7 @@ li {
       cursor: pointer;
       padding: 14px 16px;
       font-size: 14px;
-      width: 12%;
+      width: 16%;
     }
 
     /* Change background color of buttons on hover */
@@ -155,9 +162,7 @@ li {
     #engaged {background-color: transparent;}
     #pregnant {background-color: transparent;}
     #boudoir {background-color: transparent;}
-    #glamour {background-color: transparent;}
     #creative {background-color: transparent;}
-    #portrait {background-color: transparent;}
 
   /* END BUTTON SECTION */
 

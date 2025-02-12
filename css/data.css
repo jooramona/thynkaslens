@@ -21,3 +21,16 @@
 #data h3, p {
   font-size: 16px;
 }
+
+
+
+
+/***** DESKTOP GRID LAYOUT *****/
+
+
+@media screen and (min-width: 1200px){
+
+  main {
+    margin: 0 20px;
+  }
+}

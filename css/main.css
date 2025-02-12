@@ -53,6 +53,7 @@
   display: block;
   text-align: center;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
   
 
@@ -114,6 +115,7 @@
   #MAIN
 \*------------------------------------*/
 
+
 .picture {
   width: 100%;
   padding: 8px 30px;
@@ -121,8 +123,9 @@
   user-select: none;
 }
 
+
 #last_line {
-  margin-top: 80px;
+  margin: 80px 0px;
   text-align: center;
 }
 
@@ -133,7 +136,9 @@
 \*------------------------------------*/
 
 footer {
-  height:          200px;
+  height: 200px;
+  background-color: black;
+  color: white;
 }
 
 footer p {
@@ -155,6 +160,7 @@ footer p {
   padding: 10px 15px 10px 10px; /* Some padding */
   font-size: 14px; /* Increase font size */
   border-radius: 5px 0 0 5px;
+  color: var(--primary-color)
 }
 
 .fa-solid {
@@ -201,9 +207,9 @@ footer p {
         font-size: 13px;
         float: left;
         letter-spacing: 0.1em;
+        margin-bottom: 10px;
         text-transform: uppercase;
         font-weight: 500;
-        margin-bottom: 10px;
       }
       
       .nav-content a:hover {
@@ -248,13 +254,12 @@ footer p {
   \*------------------------------------*/
 
     .picture {
-      width: 100%;
-      padding: 5px;
+      padding: 10px;
     }
 
     #last_line {
-      margin-top: 60px;
-      margin-bottom: 0;
+      margin-top: 120px;
+      margin-bottom: 60px;
     }
 
     #last_line p {
