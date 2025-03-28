@@ -9,6 +9,7 @@
   <meta name="author" content="Pontom Design">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/splash.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/main.css">
@@ -25,12 +26,22 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 </head>
 
 <body>
 
+  <div class="splash-container">
+    <div class="divider"></div>
+    <div class="text-container">
+        <div id="line1" class="line">Thynkas</div>
+        <div id="line2" class="line">Photography</div>
+    </div>
+  </div>
+  
   <div id="content">
 
   <!-- *** HEADER *** -->
@@ -40,7 +51,7 @@
     <!-- *** NAVIGATION FOR MOBILE *** --> 
 
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">
+        <button onclick="toggleMenu()" class="dropbtn">
           <i class="fa-solid fa-bars"></i>
         </button>
         
@@ -78,27 +89,103 @@
       
 <!-- *** MAIN *** -->
     <main>
-      <div class="row">
-        <div class="column">  
-          <img class="picture" src="photos/01_couple.jpg" alt="wedding photo">
-          <img class="picture" src="photos/03_girl.jpg" alt="wedding photo">
-          <img class="picture" src="photos/05_girl.jpg" alt="wedding photo">
-          <img class="picture" src="photos/07_family.jpg" alt="wedding photo">
-          <img class="picture" src="photos/09_baby.jpg" alt="wedding photo">
-          <img class="picture" src="photos/11_girl.jpg" alt="wedding photo">
-          <img class="picture" src="photos/13_baby.jpg" alt="wedding photo">
-        </div>
-        <div class="column">  
-          <img class="picture" src="photos/02_creative.jpg" alt="wedding photo">
-          <img class="picture" src="photos/04_baby.jpg" alt="wedding photo">
-          <img class="picture" src="photos/06_girl.jpg" alt="wedding photo">
-          <img class="picture" src="photos/08_girl.jpg" alt="wedding photo">
-          <img class="picture" src="photos/10_girl.jpg" alt="wedding photo">
-          <img class="picture" src="photos/12_girl.jpg" alt="wedding photo">
+
+      <div class="gallery-container">
+        <img id="largeImage" class="large-image" 
+            data-desktop-src="photos/image10.jpeg" 
+            data-mobile-src="photos/image37.jpeg" 
+            src="photos/image10.jpeg" alt="Nagykép">
+        <div class="thumbs-wrapper">
+            <div class="thumbnails" id="thumbnailContainer">
+                <img src="photos/image1.jpeg" class="desktop-only" alt="Kép 1" onmouseover="changeImage(this)">
+                <img src="photos/image2.jpeg" class="desktop-only" alt="Kép 2" onmouseover="changeImage(this)">
+                <img src="photos/image3.jpeg" class="desktop-only" alt="Kép 3" onmouseover="changeImage(this)">
+                <img src="photos/image4.jpeg" class="desktop-only" alt="Kép 4" onmouseover="changeImage(this)">
+                <img src="photos/image5.jpeg" class="desktop-only" alt="Kép 5" onmouseover="changeImage(this)">
+                <img src="photos/image6.jpeg" class="desktop-only" alt="Kép 6" onmouseover="changeImage(this)">
+                <img src="photos/image7.jpeg" class="desktop-only" alt="Kép 7" onmouseover="changeImage(this)">
+                <img src="photos/image8.jpeg" class="desktop-only" alt="Kép 8" onmouseover="changeImage(this)">
+                <img src="photos/image9.jpeg" class="desktop-only" alt="Kép 9" onmouseover="changeImage(this)">
+                <img src="photos/image10.jpeg" class="desktop-only" alt="Kép 10" onmouseover="changeImage(this)">
+                <img src="photos/image11.jpeg" class="desktop-only" alt="Kép 11" onmouseover="changeImage(this)">
+                <img src="photos/image12.jpeg" class="desktop-only" alt="Kép 12" onmouseover="changeImage(this)">
+                <img src="photos/image13.jpeg" class="desktop-only" alt="Kép 13" onmouseover="changeImage(this)">
+                <img src="photos/image14.jpeg" class="desktop-only" alt="Kép 14" onmouseover="changeImage(this)">
+                <img src="photos/image15.jpeg" class="desktop-only" alt="Kép 15" onmouseover="changeImage(this)">
+                <img src="photos/image16.jpeg" class="desktop-only" alt="Kép 16" onmouseover="changeImage(this)">
+                <img src="photos/image17.jpeg" class="desktop-only" alt="Kép 17" onmouseover="changeImage(this)">
+                <img src="photos/image18.jpeg" class="desktop-only" alt="Kép 18" onmouseover="changeImage(this)">
+                <img src="photos/image19.jpeg" class="mobil-only" alt="Kép 19" onmouseover="changeImage(this)">
+                <img src="photos/image20.jpeg" class="mobil-only" alt="Kép 20" onmouseover="changeImage(this)">
+                <img src="photos/image21.jpeg" class="mobil-only" alt="Kép 21" onmouseover="changeImage(this)">
+                <img src="photos/image22.jpeg" class="mobil-only" alt="Kép 22" onmouseover="changeImage(this)">
+                <img src="photos/image23.jpeg" class="mobil-only" alt="Kép 23" onmouseover="changeImage(this)">
+                <img src="photos/image24.jpeg" class="mobil-only" alt="Kép 24" onmouseover="changeImage(this)">
+                <img src="photos/image25.jpeg" class="mobil-only" alt="Kép 25" onmouseover="changeImage(this)">
+                <img src="photos/image26.jpeg" class="mobil-only" alt="Kép 26" onmouseover="changeImage(this)">
+                <img src="photos/image28.jpeg" class="mobil-only" alt="Kép 28" onmouseover="changeImage(this)">
+                <img src="photos/image29.jpeg" class="mobil-only" alt="Kép 29" onmouseover="changeImage(this)">
+                <img src="photos/image30.jpeg" class="mobil-only" alt="Kép 30" onmouseover="changeImage(this)">
+                <img src="photos/image31.jpeg" class="mobil-only" alt="Kép 31" onmouseover="changeImage(this)">
+                <img src="photos/image32.jpeg" class="mobil-only" alt="Kép 32" onmouseover="changeImage(this)">
+                <img src="photos/image33.jpeg" class="mobil-only" alt="Kép 33" onmouseover="changeImage(this)">
+                <img src="photos/image34.jpeg" class="mobil-only" alt="Kép 34" onmouseover="changeImage(this)">
+                <img src="photos/image35.jpeg" class="mobil-only" alt="Kép 35" onmouseover="changeImage(this)">
+                <img src="photos/image36.jpeg" class="mobil-only" alt="Kép 36" onmouseover="changeImage(this)">
+                <img src="photos/image37.jpeg" class="mobil-only" alt="Kép 37" onmouseover="changeImage(this)">
+                <img src="photos/image38.jpeg" class="mobil-only" alt="Kép 38" onmouseover="changeImage(this)">
+                <img src="photos/image39.jpeg" class="mobil-only" alt="Kép 39" onmouseover="changeImage(this)">
+                <img src="photos/image40.jpeg" class="mobil-only" alt="Kép 40" onmouseover="changeImage(this)">
+                <img src="photos/image41.jpeg" class="mobil-only" alt="Kép 41" onmouseover="changeImage(this)">
+                <img src="photos/image42.jpeg" class="mobil-only" alt="Kép 42" onmouseover="changeImage(this)">
+                <img src="photos/image43.jpeg" class="mobil-only" alt="Kép 43" onmouseover="changeImage(this)">
+                <img src="photos/image44.jpeg" class="mobil-only" alt="Kép 44" onmouseover="changeImage(this)">
+                <img src="photos/image1.jpeg" class="desktop-only" alt="Kép 1" onmouseover="changeImage(this)">
+                <img src="photos/image2.jpeg" class="desktop-only" alt="Kép 2" onmouseover="changeImage(this)">
+                <img src="photos/image3.jpeg" class="desktop-only" alt="Kép 3" onmouseover="changeImage(this)">
+                <img src="photos/image4.jpeg" class="desktop-only" alt="Kép 4" onmouseover="changeImage(this)">
+                <img src="photos/image5.jpeg" class="desktop-only" alt="Kép 5" onmouseover="changeImage(this)">
+                <img src="photos/image6.jpeg" class="desktop-only" alt="Kép 6" onmouseover="changeImage(this)">
+                <img src="photos/image7.jpeg" class="desktop-only" alt="Kép 7" onmouseover="changeImage(this)">
+                <img src="photos/image8.jpeg" class="desktop-only" alt="Kép 8" onmouseover="changeImage(this)">
+                <img src="photos/image9.jpeg" class="desktop-only" alt="Kép 9" onmouseover="changeImage(this)">
+                <img src="photos/image10.jpeg" class="desktop-only" alt="Kép 10" onmouseover="changeImage(this)">
+                <img src="photos/image11.jpeg" class="desktop-only" alt="Kép 11" onmouseover="changeImage(this)">
+                <img src="photos/image12.jpeg" class="desktop-only" alt="Kép 12" onmouseover="changeImage(this)">
+                <img src="photos/image13.jpeg" class="desktop-only" alt="Kép 13" onmouseover="changeImage(this)">
+                <img src="photos/image14.jpeg" class="desktop-only" alt="Kép 14" onmouseover="changeImage(this)">
+                <img src="photos/image15.jpeg" class="desktop-only" alt="Kép 15" onmouseover="changeImage(this)">
+                <img src="photos/image16.jpeg" class="desktop-only" alt="Kép 16" onmouseover="changeImage(this)">
+                <img src="photos/image17.jpeg" class="desktop-only" alt="Kép 17" onmouseover="changeImage(this)">
+                <img src="photos/image18.jpeg" class="desktop-only" alt="Kép 18" onmouseover="changeImage(this)">
+                <img src="photos/image19.jpeg" class="mobil-only" alt="Kép 19" onmouseover="changeImage(this)">
+                <img src="photos/image20.jpeg" class="mobil-only" alt="Kép 20" onmouseover="changeImage(this)">
+                <img src="photos/image21.jpeg" class="mobil-only" alt="Kép 21" onmouseover="changeImage(this)">
+                <img src="photos/image22.jpeg" class="mobil-only" alt="Kép 22" onmouseover="changeImage(this)">
+                <img src="photos/image23.jpeg" class="mobil-only" alt="Kép 23" onmouseover="changeImage(this)">
+                <img src="photos/image24.jpeg" class="mobil-only" alt="Kép 24" onmouseover="changeImage(this)">
+                <img src="photos/image25.jpeg" class="mobil-only" alt="Kép 25" onmouseover="changeImage(this)">
+                <img src="photos/image26.jpeg" class="mobil-only" alt="Kép 26" onmouseover="changeImage(this)">
+                <img src="photos/image28.jpeg" class="mobil-only" alt="Kép 28" onmouseover="changeImage(this)">
+                <img src="photos/image29.jpeg" class="mobil-only" alt="Kép 29" onmouseover="changeImage(this)">
+                <img src="photos/image30.jpeg" class="mobil-only" alt="Kép 30" onmouseover="changeImage(this)">
+                <img src="photos/image31.jpeg" class="mobil-only" alt="Kép 31" onmouseover="changeImage(this)">
+                <img src="photos/image32.jpeg" class="mobil-only" alt="Kép 32" onmouseover="changeImage(this)">
+                <img src="photos/image33.jpeg" class="mobil-only" alt="Kép 33" onmouseover="changeImage(this)">
+                <img src="photos/image34.jpeg" class="mobil-only" alt="Kép 34" onmouseover="changeImage(this)">
+                <img src="photos/image35.jpeg" class="mobil-only" alt="Kép 35" onmouseover="changeImage(this)">
+                <img src="photos/image36.jpeg" class="mobil-only" alt="Kép 36" onmouseover="changeImage(this)">
+                <img src="photos/image37.jpeg" class="mobil-only" alt="Kép 37" onmouseover="changeImage(this)">
+                <img src="photos/image38.jpeg" class="mobil-only" alt="Kép 38" onmouseover="changeImage(this)">
+                <img src="photos/image39.jpeg" class="mobil-only" alt="Kép 39" onmouseover="changeImage(this)">
+                <img src="photos/image40.jpeg" class="mobil-only" alt="Kép 40" onmouseover="changeImage(this)">
+                <img src="photos/image41.jpeg" class="mobil-only" alt="Kép 41" onmouseover="changeImage(this)">
+                <img src="photos/image42.jpeg" class="mobil-only" alt="Kép 42" onmouseover="changeImage(this)">
+                <img src="photos/image43.jpeg" class="mobil-only" alt="Kép 43" onmouseover="changeImage(this)">
+                <img src="photos/image44.jpeg" class="mobil-only" alt="Kép 44" onmouseover="changeImage(this)">
+              </div>
         </div>
       </div>
-
-
 
     </main>
 
@@ -117,64 +204,153 @@
 
 <!-- *** FOOTER *** -->
     <footer>
-
-
       <p class="footer__copyright">© 2023 Copyright Thynkas <br>
         <span class="footer__text">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Hungary</span>
       </p>
-
-      <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <i class="fa-solid fa-circle-chevron-up"></i>     
-      </button>
-
-
-        <script>
-          // Get the button:
-        let mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0; // For Safari
-          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-        </script>
-
-
     </footer>      
 
-      <script>
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
+<!-- *** SCRIPTEK *** -->
+
+<!-- *** Cookie banner - beágyazott GSAP kezdő animáció *** -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  function showCookieBanner() {
+      if (!localStorage.getItem("cookieConsent")) {
+          document.body.insertAdjacentHTML("beforeend", `
+              <div id="cookie-banner">
+                  <p>Kedves Látogató! Ez a weboldal cookie-kat használ a felhasználói élmény javítása érdekében. Kérjük, válasszon:</p>
+                  <button id="accept-cookies">Elfogadom</button>
+                  <button id="reject-cookies">Elutasítom</button>
+                  <p>További információt az <a href="data/index.html">adatvédelmi tájékoztatóból</a> kaphat.</p>
+              </div>
+          `);
+
+          document.getElementById("accept-cookies").addEventListener("click", function () {
+              localStorage.setItem("cookieConsent", "granted");
+              loadTrackingScripts();
+              document.getElementById("cookie-banner").remove();
+          });
+
+          document.getElementById("reject-cookies").addEventListener("click", function () {
+              localStorage.setItem("cookieConsent", "denied");
+              document.getElementById("cookie-banner").remove();
+          });
+
+          gsap.to("#cookie-banner", { duration: 1, opacity: 1, display: "block" });
+      } else if (localStorage.getItem("cookieConsent") === "granted") {
+          loadTrackingScripts();
+      }
+  }
+
+  // Várjuk meg, amíg a GSAP animáció befejeződik
+  gsap.timeline()
+      .set("#content", { opacity: 0 })
+      .to(".divider", { scaleX: 1, duration: 1.2, ease: "power2.out" })
+      .to("#line1", { duration: 1.2, opacity: 1, y: -25, ease: "power3.out" }, "-=1.0")
+      .to("#line2", { duration: 1.2, opacity: 1, y: 25, ease: "power3.out" }, "-=1.0")
+      .to(".divider", { duration: 0.4, scaleX: 0, ease: "power2.in" }, "+=0.3")
+      .to("#line1", { duration: 1.0, opacity: 0, y: -50, ease: "power2.in" }, "-=0.5")
+      .to("#line2", { duration: 1.0, opacity: 0, y: 50, ease: "power2.in" }, "-=1.0")
+      .to(".splash-container", { duration: 1.2, opacity: 0, ease: "power2.inOut" })
+      .set(".splash-container", { display: "none" })
+      .set("body", { overflow: "auto" })
+      .to("#content", { duration: 1.2, opacity: 1, ease: "power2.out" }, "-=0.8")
+      .eventCallback("onComplete", showCookieBanner);
+});
+
+function loadTrackingScripts() {
+  let gaScript = document.createElement("script");
+  gaScript.src = "https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID";
+  gaScript.async = true;
+  document.head.appendChild(gaScript);
+
+  gaScript.onload = function () {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+  };
+
+  let fbScript = document.createElement("script");
+  fbScript.innerHTML = `
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'FB_PIXEL_ID');
+      fbq('track', 'PageView');
+  `;
+  document.head.appendChild(fbScript);
+}
+</script>
+
+
+<!-- Desktop és mobil figyelés a kezdőképhez -->
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const largeImage = document.getElementById("largeImage");
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    
+        // Az adat-attribútumok alapján állítja be a megfelelő képet
+        largeImage.src = isMobile ? largeImage.dataset.mobileSrc : largeImage.dataset.desktopSrc;
+    });
+    </script>
+
+<!--Mobil menu-->
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          for (let i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
             }
           }
         }
-      </script>
-  </div> <!-- END: class="grid-container" -->
+      }
+    </script>
+
+<!--Kezdőlap galéria-->
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const largeImage = document.getElementById("largeImage");
+      const thumbnailContainer = document.getElementById("thumbnailContainer");
+      const thumbnails = Array.from(thumbnailContainer.children);
+      
+      function updateLargeImage(img) {
+          largeImage.src = img.src;
+      }
+      
+      thumbnails.forEach(img => {
+          if (window.matchMedia("(max-width: 768px)").matches) {
+              img.addEventListener("click", () => updateLargeImage(img));
+          } else {
+              img.addEventListener("mouseover", () => updateLargeImage(img));
+          }
+      });
+      
+      // Végtelen mozgás duplikált képekkel
+      let duplicate = thumbnailContainer.cloneNode(true);
+      duplicate.classList.add("clone");
+      thumbnailContainer.appendChild(...duplicate.children);
+  });
+</script>
+
+</div> <!-- END: class="grid-container" -->
+
 </body>
 
 </html>

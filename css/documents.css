@@ -8,8 +8,11 @@
 
 /***** MOBIL *****/
 
+main {
+  margin: 0 30px;
+}
+
 #documents * {
-  margin: 0 20px 10px 20px;
   font-weight: 400;
   font-family: var(--primary-font-family);
 }
@@ -18,10 +21,24 @@
   margin-top: 50px;
 }
 
-#documents h3, #documents p {
+#documents h4, #documents p {
   font-size: 16px;
 }
 
+#documents h3 {
+  font-size: 24px;
+}
+
+#documents ul {
+  font-size: 16px;
+  list-style-type:disc;
+  padding: 0;
+  margin: 0 20px 10px 25px;
+}
+
+#documents .bold {
+  font-weight: bold;
+}
 
 
 /***** DESKTOP GRID LAYOUT *****/
@@ -31,5 +48,13 @@
 
   main {
     margin: 0 80px;
+    max-width: 1200px;
+  }
+
+  #documents h4, #documents p {
+    font-size: 18px;
+  }
+  #documents ul {
+    font-size: 18px;
   }
 }

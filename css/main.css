@@ -129,6 +129,79 @@
   text-align: center;
 }
 
+/* KEZDŐKÉPEK*/
+
+/* MOBILE FIRST STYLES */
+
+.desktop-only {display: none;}
+.mobil-only { display: block;}
+
+      .gallery-container { 
+        width: 100%;
+        max-width: 100vw;
+        text-align: center;
+      }
+      .large-image {
+          width: 90%;
+          height: 500px;
+          object-fit: cover;
+          border-radius: 10px;
+          transition: opacity 0.5s ease-in-out;
+      }
+      .thumbs-wrapper {
+          overflow: hidden;
+          white-space: nowrap;
+          width: 100%;
+          margin-top: 20px;
+          position: relative;
+      }
+      #thumbnailContainer {
+        display: flex;
+        width: max-content; /* A teljes tartalomhoz igazodik */
+        white-space: nowrap; /* Megakadályozza a sortörést */
+        overflow: hidden; /* Ne legyen görgetősáv */
+      }
+      .thumbnails {
+        display: flex;
+        white-space: nowrap;
+        gap: 10px;
+        animation: scroll 50s linear infinite;
+      }
+      .thumbnails img {
+          width: 25%;
+          height: auto;
+          max-height: 60px;
+          object-fit: cover;
+          cursor: pointer;
+          filter: grayscale(1);
+      }
+      .thumbnails img:hover {
+          transform: scale(1.1);
+      }
+      @keyframes scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      
+  
+/* DESKTOP STYLES */
+        @media (min-width: 768px) {
+          
+          .mobil-only {display: none;}
+          .desktop-only {display: block;}
+          
+          .gallery-container {
+              max-width: 1100px;
+          }
+          .large-image {
+              height: 400px;
+          }
+          .thumbnails img {
+            width: 100px;
+      }
+    }
+
+
 
 
 /*------------------------------------*\
@@ -148,31 +221,56 @@ footer p {
 }
 
 
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 0px; /* Place the button at the right of the page */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: white;
-  padding: 10px 15px 10px 10px; /* Some padding */
-  font-size: 14px; /* Increase font size */
-  border-radius: 5px 0 0 5px;
-  color: var(--primary-color)
-}
-
 .fa-solid {
   font-size: 22px;
 }
 
 
+/**** COOKIE ****/
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Háttérszín */
+  color: white; /* Szövegszín */
+  padding: 15px;
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 16px;
+  display: none; /* Alapból rejtve marad */
+  z-index: 9999; /* Mindig elöl maradjon */
+}
+
+#cookie-banner p {
+  margin-bottom: 5px;
+}
+
+#cookie-banner button {
+  background: #242424; /* Gomb színe */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#cookie-banner button:hover {
+  background: white; /* Hover állapot */
+  color:#242424;
+}
+
+#cookie-banner a {
+  color: white; /* Link színe */
+  text-decoration: underline;
+}
 
 
 
 
-/***** DESKTOP GRID LAYOUT *****/
+/***** DESKTOP *****/
 
 
 @media screen and (min-width: 1200px){
@@ -194,7 +292,7 @@ footer p {
       .nav-content {
         display: block;
         position: relative;
-        top: 117px;
+        top: 60px;
         background-color: rgba(255, 255, 255, 0);
       }
     
@@ -207,7 +305,6 @@ footer p {
         font-size: 13px;
         float: left;
         letter-spacing: 0.1em;
-        margin-bottom: 10px;
         text-transform: uppercase;
         font-weight: 500;
       }
@@ -245,7 +342,7 @@ footer p {
     .logo {
       width: 49%;
       font-size: 40px;
-      margin: 70px 0 50px 30px;
+      margin: 0px 0px 25px 30px;
     }
 
 
@@ -275,7 +372,6 @@ footer p {
     }   /* Change color of dropdown links on hover*/
 
 
-
   /*------------------------------------*\
     #FOOTER
   \*------------------------------------*/
@@ -290,5 +386,15 @@ footer p {
     .fa-solid {
       font-size: 42px;
     }
+
+/**** COOKIE ****/
+
+#cookie-banner {
+  width: 25%;
+  max-width: 400px; /* Ne legyen túl széles nagyobb kijelzőn sem */
+  right: 0px;
+  left: auto; /* FONTOS! Ez biztosítja, hogy NE ragadjon a bal oldalra */
+  }
+
 
 }

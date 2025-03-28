@@ -1,11 +1,13 @@
 	
 *    { box-sizing:       border-box;}
 
-html { scroll-behavior:  smooth;}
+html {
+  scroll-behavior:  smooth;
+}
 
 body {
-  color:                 rgb(0, 0, 0);
-  font-family:           'Didact Gothic', sans-serif;
+  color: rgb(0, 0, 0);
+  font-family: 'Didact Gothic', sans-serif;
   font-size: 16px;
 }
 

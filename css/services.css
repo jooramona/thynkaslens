@@ -119,6 +119,7 @@ li {
     .buttonblock {
       display: flex;
       justify-content: center;
+      width: 90vw;
     }
 
 
@@ -147,6 +148,8 @@ li {
     .servicesblock {
       font-size: 18px;
       display: none;
+      display: flex;
+      align-self: flex-end;
       float: right;
       width: 56vw;
       min-height: 450px;
