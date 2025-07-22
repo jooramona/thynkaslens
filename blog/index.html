@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>Blog - Thynkas</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Fotózás">
+  <meta name="keywords" content="fotó">
+  <meta name="author" content="Pontom Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/documents.css">
+  <link rel="stylesheet" href="../font/stylesheet.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+
+<body>
+
+  <div id="content">
+
+  <!-- *** HEADER *** -->
+    
+    <header>
+
+    <!-- *** NAVIGATION FOR MOBILE *** --> 
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <div id="myDropdown" class="dropdown-content">
+          <a href="../index.html">Kezdőlap</a>
+          <a href="../about/index.html">Rólam</a>
+          <a href="../services/index.html">Szolgáltatások</a>
+          <a href="../blog/index.html">Blog</a>
+          <a href="../contact/index.html">Kapcsolat</a>
+        </div>
+      </div>
+
+
+    <!-- *** NAVIGATION FOR DESKTOP*** --> 
+      
+        <div class="nav-content">
+          <a href="../index.html">Kezdőlap</a>
+          <a href="../about/index.html">Rólam</a>
+          <a href="../services/index.html">Szolgáltatások</a>
+          <a href="../blog/index.html">Blog</a>
+          <a href="../contact/index.html">Kapcsolat</a>
+        </div>
+
+
+    <!-- The social media icon bar -->
+        <div class="icon-bar">
+          <a href=https://www.facebook.com/profile.php?id=100094342272586 target="_blank"> <i class="fa-brands fa-facebook-f"></i></a>
+          <a href=https://www.instagram.com/thynkas/ target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </header>
+
+<!-- *** LOGÓ *** --> 
+  <a class="logo" href="../index.html"> Thynkas</a>
+
+         
+      
+<!-- *** MAIN *** -->
+    <main>
+      <h1>Hamarosan elérhető</h1>
+      <div class="linebetweentext"></div>
+      <p>Az oldal jelenleg feltöltés alatt áll. Hamarosan inspiráló tartalmakkal, történetekkel és képekkel térünk vissza. Köszönjük a türelmet!</p>
+    </main>
+
+
+<!-- *** LASTLINE *** -->
+    <div id="last_line">
+      <a href="../imprint/index.html"><p class="main_documents">Impresszum</p></a>
+      <p class="sign">|</p>
+      <a href="../aszf/index.html"><p class="main_documents">Általános szerződési feltételek (ÁSZF)</p></a>
+      <p class="sign">|</p>
+      <a href="../data/index.html"><p class="main_documents">Adatvédelmi tájékoztató</p></a>
+      <p class="sign">|</p>
+      <a href="../ff/index.html"><p class="main_documents">Felhasználási feltételek</p></a>
+    </div>
+      
+<!-- *** FOOTER *** -->
+    <footer>      
+      <p class="footer__copyright">© 2025 Copyright Thynkas <br>
+        <span class="footer__text">Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Hungary</span>
+      </p>
+    </footer>      
+
+      <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
+
+
+
+  </div> <!-- END: class="grid-container" -->
+</body>
+
+</html>

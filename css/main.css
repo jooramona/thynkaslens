@@ -142,7 +142,6 @@
         text-align: center;
       }
       .large-image {
-          width: 90%;
           height: 500px;
           object-fit: cover;
           border-radius: 10px;

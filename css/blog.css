@@ -1,0 +1,24 @@
+
+main {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.linebetweentext {
+  background-color: #555;
+  width: 160px;
+  height: 1px;
+  margin-bottom: 30px;
+}
