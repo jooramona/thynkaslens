@@ -77,6 +77,7 @@
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
+  z-index: 9999; /* biztosan minden más fölé kerül */
   top: 0;
   right: 10px;
   padding: 10px;
@@ -165,14 +166,17 @@
         white-space: nowrap;
         gap: 10px;
         animation: scroll 50s linear infinite;
+        min-width: 0; /* iOS fix */
       }
       .thumbnails img {
-          width: 25%;
-          height: auto;
-          max-height: 60px;
-          object-fit: cover;
-          cursor: pointer;
-          filter: grayscale(1);
+        flex: 0 0 auto;      /* Ne nyúljon el */
+        width: auto;         /* Engedd, hogy az object-fit szabályozza */
+        height: 60px;        /* Fix magasság */
+        max-height: 60px;
+        object-fit: cover;
+        cursor: pointer;
+        filter: grayscale(1);
+        min-width: 0;        /* Safari fix */
       }
       .thumbnails img:hover {
           transform: scale(1.1);
